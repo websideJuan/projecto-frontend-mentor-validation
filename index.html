@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+  <main class="hero">
+    <header >
+      <picture>
+        <img src="./images/bg-main-mobile.png" alt="">
+      </picture>
+
+      <article class="card-back">
+        <img src="./images/bg-card-back.png" alt="" class="header__img">
+        <div class="header__content">
+          <span class="cvcCode">000</span>
+        </div>
+      </article>
+
+      <article class="card-front">
+        <img src="./images/bg-card-front.png" alt="" class="header__img">
+        <img src="./images/card-logo.svg" alt="" style="transform: scale(.8); transform-origin: left;">
+        
+        <div class="header__content header__content--grid">
+          <span class="numberCard">0000 0000 0000 0000</span>
+          <p>Jane Appleseed</p>
+          <span class="codeCard">00/00</span>
+        </div>
+      </article>
+
+    </header>
+    <section>
+      <form id="form"> 
+        <div class="container-form" id="form-container">
+
+          <div class="col-1">
+            <label for="nameCard">
+              Cardholder Name
+            </label>
+            <input type="text" name="nameCard" id="nameCard" placeholder="e.g. Jane Appleseed" style="width: 100%;">
+          </div>
+
+          <div class="col-2">
+            <label for="numberCard">
+              Card Number
+            </label>
+            <input type="text" name="numberCard" id="numberCard" placeholder="e.g. 1234 5678 9123 0000" style="width: 100%;">
+          </div>
+
+          <div class="col-3">
+            <label for="expData">Exp. Date (MM/YY)</label>
+            <input type="text" name="expCard" placeholder="MM" style="width: 50%;">
+            <input type="text" name="dateCard" placeholder="YY" style="width: 50%;">
+          </div>
+
+          <div class="col-4">
+            <label for="cvc">CVC</label>
+            <input type="text" name="CVC" placeholder="e.g. 123" style="width: 100%;">
+          </div>
+
+        </div>
+
+        <button class="btn">
+          Confirm
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Completed state start -->
+<!-- 
+  Thank you!
+  We've added your card details
+  Continue -->
+</body>
+</html>
